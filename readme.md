@@ -1,13 +1,13 @@
 # Sound Design for Video Games Final Assignment
-TODO:
-add sounds to
-Buttons:
-START
-RETRY
-GAMEOVER
+TODO:  
+add sounds  
+Buttons:  
+START  
+RETRY  
+GAMEOVER  
 
-Phase:
-start menu theme
-midgame theme
-gameover theme
+Phase:  
+start menu theme  
+midgame theme  
+gameover theme  
 
