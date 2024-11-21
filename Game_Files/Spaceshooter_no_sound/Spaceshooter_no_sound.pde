@@ -1,4 +1,6 @@
-
+import ddf.minim.*;
+Minim minim;
+AudioPlayer playButtonSound;
 // Start menu
 boolean gameStarted = false;
 boolean cursorVisible = true;
@@ -65,6 +67,9 @@ void setup() {
   frameRate(60);
   noSmooth();
   rectMode(CENTER);
+  
+  minim = new Minim(this);
+  playButtonSound = minim.loadFile("data/audio/start.mp3");
 
   // Load images
   shipImage = loadImage(dataPath("sprites/Ship.png"));
@@ -250,6 +255,8 @@ void scoreCount(){
 
 void mousePressed() {
   if (!gameStarted && mouseX > width / 2 - 120 && mouseX < width / 2 + 120 && mouseY > height / 2 && mouseY < height / 2 + 180) {
+    playButtonSound.rewind();
+    playButtonSound.play();
     gameStarted = true;
     cursorVisible = false;
     noCursor();
