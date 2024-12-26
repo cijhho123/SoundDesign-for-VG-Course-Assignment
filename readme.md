@@ -1,5 +1,15 @@
 # Sound Design for Video Games Final Assignment
 TODO:  
+
+
+
+-- Stereo element ???
+
+-- הגבלה של 2 לטכניקה?? מה היא טכניקה? 
+
+-- FOLEY
+
+
 add sounds  
 Buttons:  
 START  
