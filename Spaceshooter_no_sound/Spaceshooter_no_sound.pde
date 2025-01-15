@@ -2,6 +2,7 @@ import ddf.minim.*;
 Minim minim;
 AudioPlayer btn_startButtonSound;
 AudioPlayer btn_retryButtonSound;
+AudioPlayer bgm_pauseSound;
 
 AudioPlayer sfx_shootingSound;
 AudioPlayer sfx_killingSound;
@@ -88,7 +89,7 @@ void audioSetup(){
   bgm_menuSound = minim.loadFile("data/audio/menu.wav");
   bgm_gameOverScreenSound = minim.loadFile("data/audio/gameOver.wav");
   bgm_levelSound = minim.loadFile("data/audio/level.wav");
-  
+  bgm_pauseSound = minim.loadFile("data/audio/pausesound.wav");
   bgm_menuSound.loop();
   
 }
@@ -140,7 +141,7 @@ void shot() {
     image(laserImage, shotX, shotY, 70, 30);
   }
   
-  if (keyPressed && key == ' '){
+  if (keyPressed && key == ' ' && !sfx_shootingSound.isPlaying()){
       shooting = true;  
       sfx_shootingSound.rewind();
       sfx_shootingSound.play();
@@ -199,14 +200,21 @@ void hit() {
 
 void kill() {
   for (int i = 0; i < enemies.length; i++) {
-    if (shotX >= enemies[i].enemyX && shotY >= enemies[i].position - 50 && shotY <= enemies[i].position + 50) {
-      enemies[i].enemyX = width + 80;
-      enemies[i].position = random(60, 300);
-      enemies[i].speed = random(4.5, 6.5);
-      enemies[i].startTime = millis();
-      shooting = false;
-      score++;
-      enemiesDefeated++;     
+    // Only check for kills if we're actually shooting and the enemy is on screen
+    if (shooting && enemies[i].enemyX > -80 && enemies[i].enemyX < width + 80) {
+      if (shotX >= enemies[i].enemyX && shotX <= enemies[i].enemyX + 80 && 
+          shotY >= enemies[i].position - 50 && shotY <= enemies[i].position + 50) {
+        enemies[i].enemyX = width + 80;  // Reset enemy position
+        enemies[i].position = random(60, 300);
+        enemies[i].speed = random(4.5, 6.5);
+        enemies[i].startTime = millis();
+        shooting = false;
+        score++;
+        enemiesDefeated++;
+        // Play the killing sound
+        sfx_killingSound.rewind();
+        sfx_killingSound.play();     
+      }
     }
   }
 }
@@ -216,13 +224,24 @@ void keyPressed() {
   if (key == 'p') {
     isPaused = !isPaused;
     if (isPaused) {
+      // Stop the level music
+      bgm_levelSound.pause();
+      
+      // Start the pause sound
+      bgm_pauseSound.rewind();
+      bgm_pauseSound.loop();
       fill(255);
       textSize(80);
       textAlign(CENTER, CENTER);
       text("Pause", width / 2, height / 2);
       noLoop();
     } 
-    else {      
+    else {
+       // Stop the pause sound
+      bgm_pauseSound.pause();
+      
+      // Resume the level music
+      bgm_levelSound.loop();
       loop();
     }
   }
@@ -231,30 +250,47 @@ void keyPressed() {
 
 
 void resetGame() {
+  // Play retry button sound
   btn_retryButtonSound.rewind();
   btn_retryButtonSound.play();
+  
+  // Store previous score
   previousScore = enemiesDefeated;
+  
+  // Reset game state
   lives = 1;
   score = 0;
   bgX = 0;
   collisionTime = -3000;
   gameStarted = false;
   cursorVisible = true;
-  bgm_menuSound.loop();
-
   
+  // Reset audio states
+  bgm_gameOverScreenSound.close();
+  bgm_levelSound.close();
+  
+  // Reload all music files to ensure they're fresh
+  bgm_menuSound = minim.loadFile("data/audio/menu.wav");
+  bgm_levelSound = minim.loadFile("data/audio/level.wav");
+  bgm_gameOverScreenSound = minim.loadFile("data/audio/gameOver.wav");
+  
+  // Start playing menu music
+  bgm_menuSound.loop();
+  
+  // Reset enemies
   for (int i = 0; i < enemies.length; i++) {
     enemies[i] = new Enemy(random(60, 300), random(4.5, 6.5));
   }
+  
   enemiesDefeated = 0;
   gameOverClicked = false;
-  loop();
- 
+  
+  // Update best score if necessary
   if (previousScore > bestScore) {
     bestScore = previousScore;
   }
-  bgm_gameOverScreenSound.close();
-  bgm_gameOverScreenSound = minim.loadFile("data/audio/gameOver.wav");
+  
+  loop();
 }
 
 
