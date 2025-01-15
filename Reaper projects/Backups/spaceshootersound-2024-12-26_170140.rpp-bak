@@ -1,4 +1,4 @@
-<REAPER_PROJECT 0.1 "7.27/win64" 1736947097
+<REAPER_PROJECT 0.1 "7.27/win64" 1735225300
   <NOTES 0 2
   >
   RIPPLE 1
@@ -6,7 +6,7 @@
   AUTOXFADE 129
   ENVATTACH 3
   POOLEDENVATTACH 0
-  MIXERUIFLAGS 11 304
+  MIXERUIFLAGS 11 48
   ENVFADESZ10 40
   PEAKGAIN 1
   FEEDBACK 0
@@ -18,9 +18,9 @@
   VIDEO_CONFIG 0 0 65792
   PANMODE 3
   PANLAWFLAGS 3
-  CURSOR 17.5
-  ZOOM 95.84109414481522 0 0
-  VZOOMEX 14.94942665 0
+  CURSOR 0
+  ZOOM 648.04889135377562 0 0
+  VZOOMEX 7.36164093 0
   USE_REC_CFG 0
   RECMODE 1
   SMPTESYNC 0 30 100 40 1000 300 0 0 1 0 0
@@ -66,8 +66,8 @@
   GLOBAL_AUTO -1
   TEMPO 120 4 4
   PLAYRATE 1 0 0.25 4
-  SELECTION 0 0
-  SELECTION2 0 0
+  SELECTION 27 28
+  SELECTION2 27 28
   MASTERAUTOMODE 0
   MASTERTRACKHEIGHT 0 0
   MASTERPEAKCOL 16576
@@ -104,7 +104,7 @@
     BEAT -1
     AUTOMODE 0
     PANLAWFLAGS 3
-    VOLPAN 0.9368544752301 0 -1 -1 1
+    VOLPAN 0.35372574155057 0 -1 -1 1
     MUTESOLO 0 0 0
     IPHASE 0
     PLAYOFFS 0 1
@@ -112,9 +112,9 @@
     BUSCOMP 0 0 0 0 0
     SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
     FIXEDLANES 9 0 0 0 0
-    SEL 0
-    REC 0 0 1 0 0 0 0 0
-    VU 20
+    SEL 1
+    REC 0 5088 1 0 0 0 0 0
+    VU 2
     TRACKHEIGHT 0 0 0 0 0 0 0
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
@@ -123,15 +123,6 @@
     PERF 0
     MIDIOUT -1
     MAINSEND 1 0
-    <PANENV2
-      EGUID {55A02C59-DA99-4CA5-86C4-8A0EFA3DCCA1}
-      ACT 0 -1
-      VIS 1 1 1
-      LANEHEIGHT 0 0
-      ARM 0
-      DEFSHAPE 0 -1 -1
-      PT 0 0 0
-    >
     <FXCHAIN
       WNDRECT 24 52 556 508
       SHOW 0
@@ -141,7 +132,7 @@
       <VST "VSTi: ReaSynth (Cockos)" reasynth.dll 0 "" 1919251321<5653547265737972656173796E746800> ""
         eXNlcu9e7f4AAAAAAgAAAAEAAAAAAAAAAgAAAAAAAABEAAAAAAAAAAAAEAA=
         776t3g3wrd6mm8Q7F7fROgAAAAAAAAAAAAAAAM5NAD/pZ4g9AAAAAAAAAD8AAIA/AACAPwAAAD8AAAAAAAAAAAAAAAA=
-        AFByb2dyYW0gMQAQAAAA
+        AAAQAAAA
       >
       FLOATPOS 56 84 345 461
       FXID {BFE8580E-8157-4B21-B8F7-D4259401BC4A}
@@ -166,7 +157,7 @@
         b25cTlZJRElBIGFwcFxOdkRMSVNSO0M6XFdJTkRPV1Ncc3lzdGVtMzI7QzpcV0lORE9XUztDOlxXSU5ET1dTXFN5c3RlbTMyXFdiZW07QzpcV0lORE9XU1xTeXN0ZW0z
         MlxXaW5kb3dzUG93ZXJTaGVsbFx2MS4wXDtDOlxXSU5ET1dTXFN5c3RlbTMyXE9wZW5TU0hcO0M6XFVzZXJzXG5lbW5lXEFwcERhdGFcTG9jYWxcTWljcm9zb2Z0XFdp
         bmRvd3NBcHBzO0M6RKwAAAIAAACAAAAAAAAAAA==
-        AFByb2dyYW0gMQAQAAAA
+        AAAQAAAA
       >
       FLOATPOS 0 0 0 0
       FXID {AD118062-6DD5-41FB-A233-ADE7CB805187}
@@ -194,12 +185,12 @@
         HASDATA 1 960 QN
         CCINTERP 32
         POOLEDEVTS {F1C3DABB-F225-4C93-BF32-EA963545254D}
-        E 0 9e 42 60
+        E 0 9e 42 7f
         <X 0 0
           /w9OT1RFIDE0IDY2IG9ybmFtZW50IHZpYnJhdG8=
         >
         E 480 8e 42 00
-        E 0 9e 45 57
+        E 0 9e 45 7f
         <X 0 0
           /w9OT1RFIDE0IDY5IG9ybmFtZW50IHZpYnJhdG8=
         >
@@ -209,7 +200,7 @@
           /w9OT1RFIDE0IDc0IG9ybmFtZW50IHZpYnJhdG8=
         >
         E 480 8e 4a 00
-        E 0 9e 49 69
+        E 0 9e 49 7f
         <X 0 0
           /w9OT1RFIDE0IDczIG9ybmFtZW50IHZpYnJhdG8=
         >
@@ -229,37 +220,7 @@
           /w9OT1RFIDE0IDY2IG9ybmFtZW50IHZpYnJhdG8=
         >
         E 480 8e 42 00
-        E 0 9e 45 45
-        <X 0 0
-          /w9OT1RFIDE0IDY5IG9ybmFtZW50IHZpYnJhdG8=
-        >
-        E 480 8e 45 00
-        E 0 9e 4a 7f
-        <X 0 0
-          /w9OT1RFIDE0IDc0IG9ybmFtZW50IHZpYnJhdG8=
-        >
-        E 480 8e 4a 00
-        E 0 9e 49 7f
-        <X 0 0
-          /w9OT1RFIDE0IDczIG9ybmFtZW50IHZpYnJhdG8=
-        >
-        E 480 8e 49 00
-        E 0 9e 45 5c
-        <X 0 0
-          /w9OT1RFIDE0IDY5IG9ybmFtZW50IHZpYnJhdG8=
-        >
-        E 480 8e 45 00
-        E 0 9e 47 56
-        <X 0 0
-          /w9OT1RFIDE0IDcxIG9ybmFtZW50IHZpYnJhdG8=
-        >
-        E 480 8e 47 00
-        E 0 9e 42 7f
-        <X 0 0
-          /w9OT1RFIDE0IDY2IG9ybmFtZW50IHZpYnJhdG8=
-        >
-        E 480 8e 42 00
-        E 0 9e 45 7e
+        E 0 9e 45 7f
         <X 0 0
           /w9OT1RFIDE0IDY5IG9ybmFtZW50IHZpYnJhdG8=
         >
@@ -279,7 +240,7 @@
           /w9OT1RFIDE0IDY5IG9ybmFtZW50IHZpYnJhdG8=
         >
         E 480 8e 45 00
-        E 0 9e 47 26
+        E 0 9e 47 7f
         <X 0 0
           /w9OT1RFIDE0IDcxIG9ybmFtZW50IHZpYnJhdG8=
         >
@@ -289,17 +250,17 @@
           /w9OT1RFIDE0IDY2IG9ybmFtZW50IHZpYnJhdG8=
         >
         E 480 8e 42 00
-        E 0 9e 45 7d
+        E 0 9e 45 7f
         <X 0 0
           /w9OT1RFIDE0IDY5IG9ybmFtZW50IHZpYnJhdG8=
         >
         E 480 8e 45 00
-        E 0 9e 4a 6c
+        E 0 9e 4a 7f
         <X 0 0
           /w9OT1RFIDE0IDc0IG9ybmFtZW50IHZpYnJhdG8=
         >
         E 480 8e 4a 00
-        E 0 9e 49 64
+        E 0 9e 49 7f
         <X 0 0
           /w9OT1RFIDE0IDczIG9ybmFtZW50IHZpYnJhdG8=
         >
@@ -309,59 +270,89 @@
           /w9OT1RFIDE0IDY5IG9ybmFtZW50IHZpYnJhdG8=
         >
         E 480 8e 45 00
-        E 0 9e 47 66
+        E 0 9e 47 7f
         <X 0 0
           /w9OT1RFIDE0IDcxIG9ybmFtZW50IHZpYnJhdG8=
         >
         E 480 8e 47 00
-        E 0 90 36 7f
-        E 480 80 36 00
-        E 0 90 39 78
-        E 480 80 39 00
-        E 0 90 3e 65
-        E 480 80 3e 00
-        E 0 90 3d 7f
-        E 480 80 3d 00
-        E 0 90 39 7f
-        E 480 80 39 00
-        E 0 90 3b 7f
-        E 480 80 3b 00
-        E 0 90 36 7f
-        E 480 80 36 00
-        E 0 90 39 7f
-        E 480 80 39 00
-        E 0 90 3e 5b
-        E 480 80 3e 00
-        E 0 90 3d 7f
-        E 480 80 3d 00
-        E 0 90 39 7f
-        E 480 80 39 00
-        E 0 90 3b 7f
-        E 480 80 3b 00
-        E 0 90 36 6a
-        E 480 80 36 00
-        E 0 90 39 7f
-        E 480 80 39 00
-        E 0 90 3e 7f
-        E 480 80 3e 00
-        E 0 90 3d 65
-        E 480 80 3d 00
-        E 0 90 39 7f
-        E 480 80 39 00
-        E 0 90 3b 73
-        E 480 80 3b 00
-        E 0 90 36 6a
-        E 480 80 36 00
-        E 0 90 39 52
-        E 480 80 39 00
-        E 0 90 3e 7f
-        E 480 80 3e 00
-        E 0 90 3d 7c
-        E 480 80 3d 00
-        E 0 90 39 7f
-        E 480 80 39 00
-        E 0 90 3b 67
-        E 480 80 3b 00
+        E 0 9e 42 7f
+        <X 0 0
+          /w9OT1RFIDE0IDY2IG9ybmFtZW50IHZpYnJhdG8=
+        >
+        E 480 8e 42 00
+        E 0 9e 45 7f
+        <X 0 0
+          /w9OT1RFIDE0IDY5IG9ybmFtZW50IHZpYnJhdG8=
+        >
+        E 480 8e 45 00
+        E 0 9e 4a 7f
+        <X 0 0
+          /w9OT1RFIDE0IDc0IG9ybmFtZW50IHZpYnJhdG8=
+        >
+        E 480 8e 4a 00
+        E 0 9e 49 7f
+        <X 0 0
+          /w9OT1RFIDE0IDczIG9ybmFtZW50IHZpYnJhdG8=
+        >
+        E 480 8e 49 00
+        E 0 9e 45 7f
+        <X 0 0
+          /w9OT1RFIDE0IDY5IG9ybmFtZW50IHZpYnJhdG8=
+        >
+        E 480 8e 45 00
+        E 0 9e 47 7f
+        <X 0 0
+          /w9OT1RFIDE0IDcxIG9ybmFtZW50IHZpYnJhdG8=
+        >
+        E 480 8e 47 00
+        e 0 90 36 7f
+        e 480 80 36 00
+        e 0 90 39 7f
+        e 480 80 39 00
+        e 0 90 3e 7f
+        e 480 80 3e 00
+        e 0 90 3d 7f
+        e 480 80 3d 00
+        e 0 90 39 7f
+        e 480 80 39 00
+        e 0 90 3b 7f
+        e 480 80 3b 00
+        e 0 90 36 7f
+        e 480 80 36 00
+        e 0 90 39 7f
+        e 480 80 39 00
+        e 0 90 3e 7f
+        e 480 80 3e 00
+        e 0 90 3d 7f
+        e 480 80 3d 00
+        e 0 90 39 7f
+        e 480 80 39 00
+        e 0 90 3b 7f
+        e 480 80 3b 00
+        e 0 90 36 7f
+        e 480 80 36 00
+        e 0 90 39 7f
+        e 480 80 39 00
+        e 0 90 3e 7f
+        e 480 80 3e 00
+        e 0 90 3d 7f
+        e 480 80 3d 00
+        e 0 90 39 7f
+        e 480 80 39 00
+        e 0 90 3b 7f
+        e 480 80 3b 00
+        e 0 90 36 7f
+        e 480 80 36 00
+        e 0 90 39 7f
+        e 480 80 39 00
+        e 0 90 3e 7f
+        e 480 80 3e 00
+        e 0 90 3d 7f
+        e 480 80 3d 00
+        e 0 90 39 7f
+        e 480 80 39 00
+        e 0 90 3b 7f
+        e 480 80 3b 00
         E 0 b0 7b 00
         CCINTERP 32
         CHASE_CC_TAKEOFFS 1
@@ -369,39 +360,13 @@
         IGNTEMPO 0 120 4 4
         SRCCOLOR 2
         VELLANE -1 100 0 0 1
-        CFGEDITVIEW -270.889796 0.055263 40 10 1 5 52 0 0 0.5
+        CFGEDITVIEW -44.059864 0.055263 40 10 1 7 52 0 0 0.5
         KEYSNAP 0
         TRACKSEL -252
         EVTFILTER 0 -1 -1 -1 -1 0 0 0 0 -1 -1 -1 -1 0 -1 0 -1 -1
         CFGEDIT 1 1 0 1 0 0 1 1 1 1 1 0.125 0 0 0 0 0 0 0 0 0 0 0 1 0 0.5 1 0 1 64
       >
     >
-  >
-  <TRACK {F254F79B-43CF-4014-8CBC-30EBD8EE13CC}
-    NAME "ReaSynth - stem"
-    PEAKCOL 16576
-    BEAT -1
-    AUTOMODE 0
-    PANLAWFLAGS 3
-    VOLPAN 1 0 -1 -1 1
-    MUTESOLO 0 0 0
-    IPHASE 0
-    PLAYOFFS 0 1
-    ISBUS 0 0
-    BUSCOMP 0 0 0 0 0
-    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
-    FIXEDLANES 9 0 0 0 0
-    SEL 0
-    REC 0 0 1 0 0 0 0 0
-    VU 2
-    TRACKHEIGHT 0 0 0 0 0 0 0
-    INQ 0 0 0 0.5 100 0 0 100
-    NCHAN 2
-    FX 1
-    TRACKID {F254F79B-43CF-4014-8CBC-30EBD8EE13CC}
-    PERF 0
-    MIDIOUT -1
-    MAINSEND 1 0
   >
   <TRACK {3A4FEBEC-8D0F-4684-8082-443820FB334B}
     NAME ReaSynth
@@ -417,7 +382,7 @@
     BUSCOMP 0 0 0 0 0
     SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
     FIXEDLANES 9 0 0 0 0
-    SEL 1
+    SEL 0
     REC 0 5088 1 0 0 0 0 0
     VU 2
     TRACKHEIGHT 0 0 0 0 0 0 0
@@ -437,7 +402,7 @@
       <VST "VSTi: ReaSynth (Cockos)" reasynth.dll 0 "" 1919251321<5653547265737972656173796E746800> ""
         eXNlcu9e7f4AAAAAAgAAAAEAAAAAAAAAAgAAAAAAAABEAAAAAAAAAAAAEAA=
         776t3g3wrd7NH589hbuzOwAAAAAAAAAAAAAAACa7pz63sKY9AAAAAAAAAD8vfdI/AACAPwAAAD8AAAAAmxxGPAAAAAA=
-        AFByb2dyYW0gMQAQAAAA
+        AAAQAAAA
       >
       FLOATPOS 0 0 0 0
       FXID {07C617DD-928D-43D4-8028-E973B0565CD5}
@@ -450,9 +415,9 @@
       LOOP 1
       ALLTAKES 0
       FADEIN 1 0 0 1 0 0 0
-      FADEOUT 1 12.125 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
       MUTE 0 0
-      SEL 1
+      SEL 0
       IGUID {9B6F0255-7B2E-4A57-BFFA-BAEFB6E563D7}
       IID 4
       NAME "GameOver Theme"
@@ -548,7 +513,7 @@
         IGNTEMPO 0 120 4 4
         SRCCOLOR 4
         VELLANE -1 100 0 0 1
-        CFGEDITVIEW 26635.315451 0.051047 57 14 1 -1 57 0 0 0.5
+        CFGEDITVIEW 26635.315451 0.051047 57 14 1 11 57 0 0 0.5
         KEYSNAP 0
         TRACKSEL -252
         EVTFILTER 0 -1 -1 -1 -1 0 0 0 0 -1 -1 -1 -1 0 -1 0 -1 -1
@@ -595,7 +560,7 @@
       IID 8
       NAME 03-MIDI
       VOLPAN 1 0 1 -1
-      SOFFS 8.47162265306121 16.94324530612242
+      SOFFS 8.47162265306121 16.94324530612243
       PLAYRATE 1 1 0 -1 0 0.0025
       CHANMODE 0
       GUID {F5EABF52-C4A8-4A22-A182-24AE323A1E91}
@@ -755,7 +720,6 @@
         GUID {B6B0C2FD-4C8F-4894-A09B-C31A4B309332}
         IGNTEMPO 0 120 4 4
         SRCCOLOR 21
-        VELLANE -1 100 0 0 1
       >
       TAKE
       NAME 04-241226_1655.wav
