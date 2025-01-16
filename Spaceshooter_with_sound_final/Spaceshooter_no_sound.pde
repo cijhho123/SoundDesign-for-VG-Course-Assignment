@@ -6,7 +6,8 @@ AudioPlayer bgm_pauseSound;
 
 AudioPlayer sfx_shootingSound;
 AudioPlayer sfx_killingSound;
-AudioPlayer sfx_gotHitSound;
+AudioPlayer sfx_gotHitSound1;
+AudioPlayer sfx_gotHitSound2;
 
 AudioPlayer bgm_menuSound;
 AudioPlayer bgm_gameOverScreenSound;
@@ -15,6 +16,8 @@ AudioPlayer bgm_levelSound;
 // Start menu
 boolean gameStarted = false;
 boolean cursorVisible = true;
+boolean useFirstHitSound = true;
+
 // Sprites
 PImage shipImage, laserImage, alienImage, spaceImage, menuImage;
 float bgX = 0;
@@ -33,7 +36,7 @@ int enemiesDefeated = 0;
 
 // Score
 int score = 0;
-int lives = 1;
+int lives = 5;
 
 // Collision
 int collisionTime = -3000;
@@ -83,7 +86,8 @@ void audioSetup(){
   //sfx
   sfx_shootingSound =  minim.loadFile("data/audio/shooting.wav");
   sfx_killingSound = minim.loadFile("data/audio/killing.wav");
-  sfx_gotHitSound = minim.loadFile("data/audio/gotHit.wav");
+  sfx_gotHitSound1 = minim.loadFile("data/audio/gothit1.wav");  // First hit sound
+  sfx_gotHitSound2 = minim.loadFile("data/audio/gothit2.wav");  // Second hit sound
   
   //bgm
   bgm_menuSound = minim.loadFile("data/audio/menu.wav");
@@ -153,12 +157,19 @@ void shot() {
 }
 
 void hit() {
-  for (int i = 0; i < enemies.length; i++) {
+    for (int i = 0; i < enemies.length; i++) {
     if (enemies[i].enemyX <= starshipX && enemies[i].enemyX >= starshipX - 80 && enemies[i].position >= starshipY - 40 && enemies[i].position <= starshipY + 40) {
       if (millis() - collisionTime > 1500) {
         lives--;
-        sfx_gotHitSound.rewind();
-        sfx_gotHitSound.play();
+        // Play alternating hit sounds
+        if (useFirstHitSound) {
+          sfx_gotHitSound1.rewind();
+          sfx_gotHitSound1.play();
+        } else {
+          sfx_gotHitSound2.rewind();
+          sfx_gotHitSound2.play();
+        }
+        useFirstHitSound = !useFirstHitSound;  // Switch to the other sound for next hit
         collisionTime = millis();
         enemies[i].enemyX = -80;
       }
@@ -258,7 +269,7 @@ void resetGame() {
   previousScore = enemiesDefeated;
   
   // Reset game state
-  lives = 1;
+  lives = 5;
   score = 0;
   bgX = 0;
   collisionTime = -3000;
