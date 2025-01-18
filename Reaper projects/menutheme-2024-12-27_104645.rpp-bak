@@ -1,0 +1,380 @@
+<REAPER_PROJECT 0.1 "7.27/win64" 1735289205
+  <NOTES 0 2
+  >
+  RIPPLE 0
+  GROUPOVERRIDE 0 0 0
+  AUTOXFADE 129
+  ENVATTACH 3
+  POOLEDENVATTACH 0
+  MIXERUIFLAGS 11 48
+  ENVFADESZ10 40
+  PEAKGAIN 1
+  FEEDBACK 0
+  PANLAW 1
+  PROJOFFS 0 0 0
+  MAXPROJLEN 0 0
+  GRID 3199 8 1 8 1 0 0 0
+  TIMEMODE 1 5 -1 30 0 0 -1
+  VIDEO_CONFIG 0 0 65792
+  PANMODE 3
+  PANLAWFLAGS 3
+  CURSOR 0.5
+  ZOOM 100 0 0
+  VZOOMEX 6 0
+  USE_REC_CFG 0
+  RECMODE 1
+  SMPTESYNC 0 30 100 40 1000 300 0 0 1 0 0
+  LOOP 0
+  LOOPGRAN 0 4
+  RECORD_PATH "Media" ""
+  <RECORD_CFG
+    ZXZhdxgAAQ==
+  >
+  <APPLYFX_CFG
+  >
+  RENDER_FILE ""
+  RENDER_PATTERN untitled
+  RENDER_FMT 0 2 0
+  RENDER_1X 0
+  RENDER_RANGE 1 0 0 18 1000
+  RENDER_RESAMPLE 3 0 1
+  RENDER_ADDTOPROJ 0
+  RENDER_STEMS 0
+  RENDER_DITHER 0
+  TIMELOCKMODE 1
+  TEMPOENVLOCKMODE 1
+  ITEMMIX 1
+  DEFPITCHMODE 589824 0
+  TAKELANE 1
+  SAMPLERATE 44100 0 0
+  <RENDER_CFG
+    ZXZhdxgAAQ==
+  >
+  LOCK 1
+  <METRONOME 6 2
+    VOL 0.25 0.125
+    BEATLEN 4
+    FREQ 1760 880 1
+    SAMPLES "" ""
+    SPLIGNORE 0 0
+    SPLDEF 2 660 "" 0
+    SPLDEF 3 440 "" 0
+    PATTERN 0 169
+    PATTERNSTR ABBB
+    MULT 1
+  >
+  GLOBAL_AUTO -1
+  TEMPO 120 4 4
+  PLAYRATE 1 0 0.25 4
+  SELECTION 0.5 0.5
+  SELECTION2 0.5 0.5
+  MASTERAUTOMODE 0
+  MASTERTRACKHEIGHT 0 0
+  MASTERPEAKCOL 16576
+  MASTERMUTESOLO 0
+  MASTERTRACKVIEW 0 0.6667 0.5 0.5 0 0 0 0 0 0 0 0 0 0
+  MASTERHWOUT 0 0 1 0 0 0 0 -1
+  MASTER_NCH 2 2
+  MASTER_VOLUME 1 0 -1 -1 1
+  MASTER_PANMODE 3
+  MASTER_PANLAWFLAGS 3
+  MASTER_FX 1
+  MASTER_SEL 0
+  <MASTERPLAYSPEEDENV
+    EGUID {66D58591-FD49-469D-A3D5-7F3493B99BCD}
+    ACT 0 -1
+    VIS 0 1 1
+    LANEHEIGHT 0 0
+    ARM 0
+    DEFSHAPE 0 -1 -1
+  >
+  <TEMPOENVEX
+    EGUID {419384C0-7689-4CCB-8544-77965FF11D08}
+    ACT 1 -1
+    VIS 1 0 1
+    LANEHEIGHT 0 0
+    ARM 0
+    DEFSHAPE 1 -1 -1
+  >
+  <PROJBAY
+  >
+  <TRACK {CDB1BAAB-30F1-4198-A2E4-4DC2CA6A1C99}
+    NAME ReaSynth
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 0.9368544752301 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    SEL 1
+    REC 0 0 1 0 0 0 0 0
+    VU 20
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {CDB1BAAB-30F1-4198-A2E4-4DC2CA6A1C99}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <PANENV2
+      EGUID {55A02C59-DA99-4CA5-86C4-8A0EFA3DCCA1}
+      ACT 0 -1
+      VIS 0 1 1
+      LANEHEIGHT 0 0
+      ARM 0
+      DEFSHAPE 0 -1 -1
+      PT 0 0 0
+    >
+    <FXCHAIN
+      WNDRECT 24 52 556 508
+      SHOW 0
+      LASTSEL 0
+      DOCKED 0
+      BYPASS 0 0 0
+      <VST "VSTi: ReaSynth (Cockos)" reasynth.dll 0 "" 1919251321<5653547265737972656173796E746800> ""
+        eXNlcu9e7f4AAAAAAgAAAAEAAAAAAAAAAgAAAAAAAABEAAAAAAAAAAAAEAA=
+        776t3g3wrd6mm8Q7F7fROgAAAAAAAAAAAAAAAM5NAD/pZ4g9AAAAAAAAAD8AAIA/AACAPwAAAD8AAAAAAAAAAAAAAAA=
+        AFByb2dyYW0gMQAQAAAA
+      >
+      FLOATPOS 56 84 345 461
+      FXID {BFE8580E-8157-4B21-B8F7-D4259401BC4A}
+      WAK 0 0
+      BYPASS 1 0 0
+      <VST "VST: ReaCast (Cockos)" reacast.dll 0 "" 1919246691<56535472656163726561636173740000> ""
+        Y2Flcu5e7f4CAAAAAQAAAAAAAAACAAAAAAAAAAAAAAAcBgAAAQAAAAAAEAA=
+        AAAAAAAA8D8AbTkQAAAAAFABORAAAAAAUFJPRklMRT1DOlxQcm9ncmFtRGF0YQBBTURSTVNES1BBVEg9QzpcUHJvZ3JhbSBGaWxlc1xBTURcUnl6ZW5NYXN0ZXJTREtc
+        AEFQUERBVEE9QzpcVXNlcnNcbmVtbmVcQXBwRGF0YVxSb2FtaW5nAENob2NvbGF0ZXlJbnN0YWxsPUM6XFByb2dyYW1EYXRhXGNob2NvbGF0ZXkAQ29tbW9uUHJvZ3Jh
+        bUZpbGVzPUM6XFByb2dyYW0gRmlsZXNcQ29tbW9uIEZpbGVzAENvbW1vblByb2dyYW1GaWxlcyh4ODYpPUM6XFByb2dyYW0gAGlsZXMgKHg4NilcQ29tbW9uIEZpbGVz
+        AENvbW1vblByb2dyYW1XNjQzMj1DOlxQcm9ncmFtIEZpbGVzXENvbW1vbiBGaWxlcwBDT01QVVRFUk5BTUU9TUFUQU4AQ29tU3BlYz1DOlxXSU5ET1dTXHN5c3RlbTMy
+        XGNtZC5leGUARHJpdmVyRGF0YT1DOlxXaW5kb3dzXFN5c3RlbTMyXERyaXZlcnNcRHJpdmVyRGF0YQBFRkNfMzQzODg9MQBIT01FRFJJVkU9QzoASE9NRVBBVEg9XFVz
+        ZXJzXG5lbW5lAExPQ0FMQVBQREFUQT1DOlxVc2Vyc1xuZW1uZVxBcABEYXRhXExvY2FsAExPR09OU0VSVkVSPVxcTUFUQU4ATUFWRU5fSE9NRT1DOlxVc2Vyc1xuZW1u
+        ZVxEb3dubG9hZHNcYXBhY2hlLW1hdmVuLTMuOS42AE5VTUJFUl9PRl9QUk9DRVNTT1JTPTE2AE9uZURyaXZlPUM6XFVzZXJzXG5lbW5lXE9uZURyaXZlAE9ubGluZVNl
+        cnZpY2VzPU9ubGluZSBTZXJ2aWNlcwBPUz1XaW5kb3dzX05UAFBhdGg9QzpcUHl0aG9uMzEyXFNjcmlwdHNcO0M6XFB5dGhvbjMxMlw7QzpcUHJvZ3JhbSBGaWxlc1xD
+        b21tb24gRmkAZXNcT3JhY2xlXEphdmFcamF2YXBhdGg7Qzpcd2luZG93c1xzeXN0ZW0zMjtDOlx3aW5kb3dzO0M6XHdpbmRvd3NcU3lzdGVtMzJcV2JlbTtDOlx3aW5k
+        b3dzXFN5c3RlbTMyXFdpbmRvd3NQb3dlclNoZWxsXHYxLjBcO0M6XHdpbmRvd3NcU3lzdGVtMzJcT3BlblNTSFw7QzpcUHJvZ3JhbSBGaWxlcyAoeDg2KVxOVklESUEg
+        Q29ycG9yYXRpb25cUGh5c1hcQ29tbW9uO0M6XFdJTkRPV1Ncc3lzdGVtMzI7QzpcV0lORE9XUztDOlxXSU5ET1dTXFN5c3RlAAAAAABiZW07QzpcV0lORE9XU1xTeXN0
+        ZW0zMlxXaW5kb3dzUG93ZXJTaGVsbFx2MS4wXDtDOlxXSU5ET1dTXFN5c3RlbTMyXE9wZW5TU0hcO0M6XFByb2dyYW0gRmlsZXNcR2l0XGNtZDtDOlxVc2Vyc1xuZW1u
+        ZVxEb3dubG9hZHNcYXBhY2hlLW1hdmVuLTMuOS42XGJpbjtDOlxQcm9ncmFtIEZpbGVzXEhQXEhQIE9uZSBBZ2VudDtDOlxQcm9ncmFtIEZpbGVzXG5vZGVqc1w7Qzpc
+        UHJvZ3JhbURhdGFcY2hvY29sYXRleVxiaW47QzpcUHJvZ3JhbSBGaWxlc1wAQVRMQUJcUjIwMjRiXGJpbjs7QzpcUHJvZ3JhbSBGaWxlc1xOVklESUEgQ29ycG9yYXRp
+        b25cTlZJRElBIGFwcFxOdkRMSVNSO0M6XFdJTkRPV1Ncc3lzdGVtMzI7QzpcV0lORE9XUztDOlxXSU5ET1dTXFN5c3RlbTMyXFdiZW07QzpcV0lORE9XU1xTeXN0ZW0z
+        MlxXaW5kb3dzUG93ZXJTaGVsbFx2MS4wXDtDOlxXSU5ET1dTXFN5c3RlbTMyXE9wZW5TU0hcO0M6XFVzZXJzXG5lbW5lXEFwcERhdGFcTG9jYWxcTWljcm9zb2Z0XFdp
+        bmRvd3NBcHBzO0M6RKwAAAIAAACAAAAAAAAAAA==
+        AFByb2dyYW0gMQAQAAAA
+      >
+      FLOATPOS 0 0 0 0
+      FXID {AD118062-6DD5-41FB-A233-ADE7CB805187}
+      WAK 0 0
+    >
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 12
+      LOOP 0
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {5A82C986-AFE0-48BB-9ECC-91CD70F8F568}
+      IID 2
+      NAME "Menu Theme"
+      VOLPAN 1 0 1 -1
+      SOFFS 0 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {85BD2B10-1676-416F-AA39-584082851409}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        CCINTERP 32
+        POOLEDEVTS {D99CAE45-C451-4B50-92BF-5A3F4426F497}
+        E 0 9e 42 60
+        <X 0 0
+          /w9OT1RFIDE0IDY2IG9ybmFtZW50IHZpYnJhdG8=
+        >
+        E 480 8e 42 00
+        E 0 9e 45 57
+        <X 0 0
+          /w9OT1RFIDE0IDY5IG9ybmFtZW50IHZpYnJhdG8=
+        >
+        E 480 8e 45 00
+        E 0 9e 4a 7f
+        <X 0 0
+          /w9OT1RFIDE0IDc0IG9ybmFtZW50IHZpYnJhdG8=
+        >
+        E 480 8e 4a 00
+        E 0 9e 49 69
+        <X 0 0
+          /w9OT1RFIDE0IDczIG9ybmFtZW50IHZpYnJhdG8=
+        >
+        E 480 8e 49 00
+        E 0 9e 45 7f
+        <X 0 0
+          /w9OT1RFIDE0IDY5IG9ybmFtZW50IHZpYnJhdG8=
+        >
+        E 480 8e 45 00
+        E 0 9e 47 7f
+        <X 0 0
+          /w9OT1RFIDE0IDcxIG9ybmFtZW50IHZpYnJhdG8=
+        >
+        E 480 8e 47 00
+        E 0 9e 42 7f
+        <X 0 0
+          /w9OT1RFIDE0IDY2IG9ybmFtZW50IHZpYnJhdG8=
+        >
+        E 480 8e 42 00
+        E 0 9e 45 45
+        <X 0 0
+          /w9OT1RFIDE0IDY5IG9ybmFtZW50IHZpYnJhdG8=
+        >
+        E 480 8e 45 00
+        E 0 9e 4a 7f
+        <X 0 0
+          /w9OT1RFIDE0IDc0IG9ybmFtZW50IHZpYnJhdG8=
+        >
+        E 480 8e 4a 00
+        E 0 9e 49 7f
+        <X 0 0
+          /w9OT1RFIDE0IDczIG9ybmFtZW50IHZpYnJhdG8=
+        >
+        E 480 8e 49 00
+        E 0 9e 45 5c
+        <X 0 0
+          /w9OT1RFIDE0IDY5IG9ybmFtZW50IHZpYnJhdG8=
+        >
+        E 480 8e 45 00
+        E 0 9e 47 56
+        <X 0 0
+          /w9OT1RFIDE0IDcxIG9ybmFtZW50IHZpYnJhdG8=
+        >
+        E 480 8e 47 00
+        E 0 9e 42 7f
+        <X 0 0
+          /w9OT1RFIDE0IDY2IG9ybmFtZW50IHZpYnJhdG8=
+        >
+        E 480 8e 42 00
+        E 0 9e 45 7e
+        <X 0 0
+          /w9OT1RFIDE0IDY5IG9ybmFtZW50IHZpYnJhdG8=
+        >
+        E 480 8e 45 00
+        E 0 9e 4a 7f
+        <X 0 0
+          /w9OT1RFIDE0IDc0IG9ybmFtZW50IHZpYnJhdG8=
+        >
+        E 480 8e 4a 00
+        E 0 9e 49 7f
+        <X 0 0
+          /w9OT1RFIDE0IDczIG9ybmFtZW50IHZpYnJhdG8=
+        >
+        E 480 8e 49 00
+        E 0 9e 45 7f
+        <X 0 0
+          /w9OT1RFIDE0IDY5IG9ybmFtZW50IHZpYnJhdG8=
+        >
+        E 480 8e 45 00
+        E 0 9e 47 26
+        <X 0 0
+          /w9OT1RFIDE0IDcxIG9ybmFtZW50IHZpYnJhdG8=
+        >
+        E 480 8e 47 00
+        E 0 9e 42 7f
+        <X 0 0
+          /w9OT1RFIDE0IDY2IG9ybmFtZW50IHZpYnJhdG8=
+        >
+        E 480 8e 42 00
+        E 0 9e 45 7d
+        <X 0 0
+          /w9OT1RFIDE0IDY5IG9ybmFtZW50IHZpYnJhdG8=
+        >
+        E 480 8e 45 00
+        E 0 9e 4a 6c
+        <X 0 0
+          /w9OT1RFIDE0IDc0IG9ybmFtZW50IHZpYnJhdG8=
+        >
+        E 480 8e 4a 00
+        E 0 9e 49 64
+        <X 0 0
+          /w9OT1RFIDE0IDczIG9ybmFtZW50IHZpYnJhdG8=
+        >
+        E 480 8e 49 00
+        E 0 9e 45 7f
+        <X 0 0
+          /w9OT1RFIDE0IDY5IG9ybmFtZW50IHZpYnJhdG8=
+        >
+        E 480 8e 45 00
+        E 0 9e 47 66
+        <X 0 0
+          /w9OT1RFIDE0IDcxIG9ybmFtZW50IHZpYnJhdG8=
+        >
+        E 480 8e 47 00
+        E 0 90 36 7f
+        E 480 80 36 00
+        E 0 90 39 78
+        E 480 80 39 00
+        E 0 90 3e 65
+        E 480 80 3e 00
+        E 0 90 3d 7f
+        E 480 80 3d 00
+        E 0 90 39 7f
+        E 480 80 39 00
+        E 0 90 3b 7f
+        E 480 80 3b 00
+        E 0 90 36 7f
+        E 480 80 36 00
+        E 0 90 39 7f
+        E 480 80 39 00
+        E 0 90 3e 5b
+        E 480 80 3e 00
+        E 0 90 3d 7f
+        E 480 80 3d 00
+        E 0 90 39 7f
+        E 480 80 39 00
+        E 0 90 3b 7f
+        E 480 80 3b 00
+        E 0 90 36 6a
+        E 480 80 36 00
+        E 0 90 39 7f
+        E 480 80 39 00
+        E 0 90 3e 7f
+        E 480 80 3e 00
+        E 0 90 3d 65
+        E 480 80 3d 00
+        E 0 90 39 7f
+        E 480 80 39 00
+        E 0 90 3b 73
+        E 480 80 3b 00
+        E 0 90 36 6a
+        E 480 80 36 00
+        E 0 90 39 52
+        E 480 80 39 00
+        E 0 90 3e 7f
+        E 480 80 3e 00
+        E 0 90 3d 7c
+        E 480 80 3d 00
+        E 0 90 39 7f
+        E 480 80 39 00
+        E 0 90 3b 67
+        E 480 80 3b 00
+        E 0 b0 7b 00
+        CCINTERP 32
+        CHASE_CC_TAKEOFFS 1
+        GUID {269853B1-EFD4-448F-92F7-119205476A34}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 2
+        VELLANE -1 100 0 0 1
+        CFGEDITVIEW -270.889796 0.055263 40 10 1 5 52 0 0 0.5
+        KEYSNAP 0
+        TRACKSEL -252
+        EVTFILTER 0 -1 -1 -1 -1 0 0 0 0 -1 -1 -1 -1 0 -1 0 -1 -1
+        CFGEDIT 1 1 0 1 0 0 1 1 1 1 1 0.125 0 0 0 0 0 0 0 0 0 0 0 1 0 0.5 1 0 1 64
+      >
+    >
+  >
+>
